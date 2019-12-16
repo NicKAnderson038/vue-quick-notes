@@ -2,13 +2,6 @@ import { ref } from '@vue/composition-api'
 import { useRouter } from '@/hooks/router'
 
 const useModalForm = () => {
-  // const localState = reactive({
-  //   model: {
-  //     title: '',
-  //     content: '',
-  //   },
-  //   formError: null,
-  // })
   const localState = ref({
     model: {
       title: '',
