@@ -14,7 +14,7 @@ function useSorting({ props, emit }) {
     sortDirection: true,
   })
 
-  const onSort = function(key) {
+  const onSort = key => {
     if (localState.sort === key) {
       localState.sortDirection = !localState.sortDirection
     } else {
@@ -49,7 +49,7 @@ function useSelecting({ sortingState, props, emit }) {
     }
   )
 
-  const onActionSelectAll = function() {
+  const onActionSelectAll = () => {
     localState.isSelectAll
       ? (localState.selectionModel = [])
       : (localState.selectionModel = sortingState.itemsSorted.map(
@@ -57,7 +57,7 @@ function useSelecting({ sortingState, props, emit }) {
         ))
   }
 
-  const onActionDeselectAll = function() {
+  const onActionDeselectAll = () => {
     localState.selectionModel = []
   }
 
