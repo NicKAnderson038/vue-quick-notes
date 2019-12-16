@@ -1,5 +1,7 @@
 # Vue Quick Notes
 
+Check out <a href="https://nickanderson038.github.io/vue-quick-notes/" target="_blank">DEMO</a> here.
+
 ## Project setup
 
 ```
