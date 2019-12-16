@@ -18,11 +18,11 @@ const useModalForm = () => {
 function useModalActions({ form, emit }) {
   const router = useRouter()
 
-  const onModalClose = function() {
+  const onModalClose = () => {
     router.push({ name: 'Home' })
   }
 
-  const onModalSave = function() {
+  const onModalSave = () => {
     const hasValues = Object.values(form.model).every(model => !!model)
 
     if (hasValues) {
